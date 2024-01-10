@@ -94,9 +94,23 @@
             border: 2px solid white;
         }
 
-        a.button:hover {
+        /* https://stackoverflow.com/a/74146820/5511061 */
+        /* a.button:hover {
+            background-color: white;
+            cursor: pointer;
+        } */
+        @media (hover: hover) {
+          a.button:hover {
             color: #5B86E5;
             background-color: white;
+            cursor: pointer;
+          }
+        }
+        @media (hover: none) {
+          a.button:active {
+            color: #5B86E5;
+            background-color: white;
+          }
         }
 
         h1.name {
@@ -156,7 +170,7 @@
         </div>
     </div>
     <footer>
-        ©2023
+        ©2024
     </footer>
     <script>
         window.dataLayer = window.dataLayer || [];
