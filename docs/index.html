@@ -56,17 +56,17 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(0deg, #36D1DC, #5B86E5);
+            background: linear-gradient(0deg, #DAFCD6, #E1DAFF);
             font-family: 'Open Sans', sans-serif;
             margin: 0;
-            color: white;
+            color: #9099AC;
             display: flex;
             min-height: 100vh;
             flex-direction: column;
         }
 
         a {
-            color: white;
+            color: #9099AC;
         }
 
         .container {
@@ -82,6 +82,7 @@
             width: 128px;
             height: 132.5px;
             border-radius: 50%;
+            opacity: 0.7;
         }
 
         a.button {
@@ -91,25 +92,25 @@
             font-size: 1.3rem;
             padding: 10px;
             text-decoration: none;
-            border: 2px solid white;
+            border: 2px solid #9099AC;
         }
 
         /* https://stackoverflow.com/a/74146820/5511061 */
         /* a.button:hover {
-            background-color: white;
+            background-color: #C4C8DA;
             cursor: pointer;
         } */
         @media (hover: hover) {
           a.button:hover {
-            color: #5B86E5;
-            background-color: white;
+            color: #9099AC;
+            background-color: #C4C8DA;
             cursor: pointer;
           }
         }
         @media (hover: none) {
           a.button:active {
-            color: #5B86E5;
-            background-color: white;
+            color: #9099AC;
+            background-color: #C4C8DA;
           }
         }
 
@@ -164,9 +165,12 @@
                 <img class="profile" src="/images/delange.png" alt="delange.dev">
             </div>
             <div class="slogan">
-                Hi 👋 Write me a message!
+                Hi 👋
+                <br>
+                <br>
+                Write me a message!
             </div>
-            <a href="mailto:info@delange.dev" class="button">E-Mail</a>
+            <a class="button" href="mailto:info@delange.dev">E-Mail</a>
         </div>
     </div>
     <footer>
