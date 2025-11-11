@@ -33,10 +33,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="max-image-preview:large">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="delange.dev">
+    <meta name="twitter:title" content="delange.dev">
+    <meta name="twitter:image" content="https://delange.dev/images/delange.png">
     <meta property="og:image" content="https://delange.dev/images/delange.png">
+    <meta property="og:image:alt" content="delange.dev">
     <meta property="og:url" content="https://delange.dev">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
@@ -44,7 +48,10 @@
     <meta property="og:site_name" content="delange.dev">
     <meta property="og:description" content="delange.dev">
     <meta name="description" content="delange.dev">
+    <meta name="keywords" content="delange.dev">
+    <meta name="author" content="delange">
     <title>delange.dev</title>
+    <link rel="canonical" href="https://delange.dev">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 48x48" href="/favicon.ico">
@@ -53,7 +60,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
     <style>
         body {
             background: linear-gradient(0deg, #DAFCD6, #E1DAFF);
@@ -174,8 +183,11 @@
         </div>
     </div>
     <footer>
-        ©2024
+        ©<span id="current-year"></span>
     </footer>
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
